@@ -31,14 +31,14 @@ Design issues:
 * `responses.feedback_id` is nullable/does not have constraints
 
 
-##Eager rating calculation
+## Eager rating calculation
 
 ### Pros:
 * Always gives the most accurate value
 ### Cons:
 * Might be database bottleneck while getting ratings for big amount of experiences
 
-##Lazy rating calculation
+## Lazy rating calculation
 
 ### Pros:
 * The value is always available w/o any extra queries
