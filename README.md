@@ -27,12 +27,13 @@ Things you may want to cover:
 Design issues:
 
 * Relation `responses` does not meet 2nd normal form
-* * Possible solution: Store questions and answers as separate relations.
+* * Possible solution: Store questions and answers as separate relations
 * `feedbacks.experience_id` is nullable/does not have constraints
 * * Possible solution: Introduce constaint/foreing key
 * `responses.feedback_id` is nullable/does not have constraints
 * * Possible solution: Introduce constaint/foreing key
-
+* One feedback may contain few responses with rating
+* * Possible solution: after addresing normalisation issues, introduce uniq constraint by `question_id` and `feedback_id`
 
 ## Eager rating calculation
 
